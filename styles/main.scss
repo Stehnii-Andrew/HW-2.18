@@ -1,0 +1,167 @@
+body {
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lobster-Regular';
+    src: url('../fonts/Lobster-Regular.ttf')
+}
+
+.container {
+    width: 980px;
+    border: 1px solid #afafaf;
+    margin: 0 auto;
+
+    .lobster {
+        font-family: 'Lobster-Regular';
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #c600e0;
+        height: 50px;
+        color: #fff;
+        font-family: 'RobotoCondensed-Regular';
+
+        .logo {
+            font-family: 'Lobster-Regular';
+            font-size: 22px;
+            margin-left: 30px;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+        .options {
+            display: flex;
+
+            .option {
+                margin-right: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+                
+            }
+        }
+    }
+
+    .content {
+        font-family: 'RobotoCondensed-Regular';
+
+        .top {
+            height: 520px;
+            position: relative;
+            .lot1 {
+                position: absolute;
+                top: 20px;
+                left: 40px;
+
+                .text {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 400px;
+                    border: 1px solid #afafaf;
+                }
+            }
+            .lot2 {
+                position: absolute;
+                left: 600px;
+                top: 100px;
+
+                .price {
+                    display: flex;
+                    
+
+                    .main {
+                        font-size: 45px;
+                    }
+                    .crossed-out {
+                        color: #afafaf;
+                        font-size: 35px;
+                        text-decoration: line-through;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                    }
+                }
+                .promotion {
+                    margin-top: 5px;
+                    color: #535353;
+
+                    .date {
+                        color: #000;
+                        font-size: 18px;
+                    }
+                }
+                .buy {
+                    width: 300px;
+                    background-color: #c600e0;
+                    height: 70px;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-size: 26px;
+                    font-family: 'Lobster-Regular';
+                    border-radius: 5px;
+                    border: none;
+
+                    &:hover {
+                        background-color: red;
+                        transition: 0.4s;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .bottom {
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #afafaf;
+            
+            .lot {
+                width: 200px;
+                position: relative;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    
+                    .new {
+                        background-color: red;
+                        transition: 0.4s;
+                    }
+                }
+
+                img {
+                    width: 200px;
+                }
+                .new {
+                    position: absolute;
+                    background-color: #c600e0;
+                    height: 20px;
+                    display: flex;
+                    padding: 2.5px 5px;
+                    border-radius: 10px;
+                    color: #fff;
+                    top: 10px;
+                    left: 150px;
+                }
+            }
+
+        }
+    }
+}

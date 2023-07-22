@@ -1,0 +1,145 @@
+body {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url("../fonts/Lobster-Regular.ttf");
+}
+.container {
+  width: 980px;
+  border: 1px solid #afafaf;
+  margin: 0 auto;
+}
+.container .lobster {
+  font-family: "Lobster-Regular";
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c600e0;
+  height: 50px;
+  color: #fff;
+  font-family: "RobotoCondensed-Regular";
+}
+.container .header .logo {
+  font-family: "Lobster-Regular";
+  font-size: 22px;
+  margin-left: 30px;
+}
+.container .header .logo:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container .header .options {
+  display: flex;
+}
+.container .header .options .option {
+  margin-right: 20px;
+}
+.container .header .options .option:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container .content {
+  font-family: "RobotoCondensed-Regular";
+}
+.container .content .top {
+  height: 520px;
+  position: relative;
+}
+.container .content .top .lot1 {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+.container .content .top .lot1 .text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.container .content .top .lot1 img {
+  width: 400px;
+  border: 1px solid #afafaf;
+}
+.container .content .top .lot2 {
+  position: absolute;
+  left: 600px;
+  top: 100px;
+}
+.container .content .top .lot2 .price {
+  display: flex;
+}
+.container .content .top .lot2 .price .main {
+  font-size: 45px;
+}
+.container .content .top .lot2 .price .crossed-out {
+  color: #afafaf;
+  font-size: 35px;
+  text-decoration: line-through;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.container .content .top .lot2 .promotion {
+  margin-top: 5px;
+  color: #535353;
+}
+.container .content .top .lot2 .promotion .date {
+  color: #000;
+  font-size: 18px;
+}
+.container .content .top .lot2 .buy {
+  width: 300px;
+  background-color: #c600e0;
+  height: 70px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Lobster-Regular";
+  border-radius: 5px;
+  border: none;
+}
+.container .content .top .lot2 .buy:hover {
+  background-color: red;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.container .content .bottom {
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #afafaf;
+}
+.container .content .bottom .lot {
+  width: 200px;
+  position: relative;
+}
+.container .content .bottom .lot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container .content .bottom .lot:hover .new {
+  background-color: red;
+  transition: 0.4s;
+}
+.container .content .bottom .lot img {
+  width: 200px;
+}
+.container .content .bottom .lot .new {
+  position: absolute;
+  background-color: #c600e0;
+  height: 20px;
+  display: flex;
+  padding: 2.5px 5px;
+  border-radius: 10px;
+  color: #fff;
+  top: 10px;
+  left: 150px;
+}/*# sourceMappingURL=main.css.map */
